@@ -9,16 +9,20 @@
 /* Begin PBXBuildFile section */
 		751A43A227BF6C5E003C5E10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A43A127BF6C5E003C5E10 /* AppDelegate.swift */; };
 		751A43A627BF6C5E003C5E10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A43A527BF6C5E003C5E10 /* ViewController.swift */; };
-		751A43A927BF6C5E003C5E10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 751A43A727BF6C5E003C5E10 /* Main.storyboard */; };
 		751A43AB27BF6C60003C5E10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751A43AA27BF6C60003C5E10 /* Assets.xcassets */; };
 		751A43AE27BF6C60003C5E10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 751A43AC27BF6C60003C5E10 /* LaunchScreen.storyboard */; };
+		7553C96327BF74CC00140690 /* NSObject-Rx in Frameworks */ = {isa = PBXBuildFile; productRef = 7553C96227BF74CC00140690 /* NSObject-Rx */; };
+		7553C96627BF74DF00140690 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 7553C96527BF74DF00140690 /* Then */; };
+		7553C96927BF74F200140690 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7553C96827BF74F200140690 /* SnapKit */; };
+		7553C96C27BF750200140690 /* ModernRIBs in Frameworks */ = {isa = PBXBuildFile; productRef = 7553C96B27BF750200140690 /* ModernRIBs */; };
+		7553C96F27BF751900140690 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 7553C96E27BF751900140690 /* RxCocoa */; };
+		7553C97127BF751900140690 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7553C97027BF751900140690 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		751A439E27BF6C5E003C5E10 /* Finda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		751A43A127BF6C5E003C5E10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		751A43A527BF6C5E003C5E10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		751A43A827BF6C5E003C5E10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		751A43AA27BF6C60003C5E10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		751A43AD27BF6C60003C5E10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		751A43AF27BF6C60003C5E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,6 +33,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7553C97127BF751900140690 /* RxSwift in Frameworks */,
+				7553C96927BF74F200140690 /* SnapKit in Frameworks */,
+				7553C96327BF74CC00140690 /* NSObject-Rx in Frameworks */,
+				7553C96F27BF751900140690 /* RxCocoa in Frameworks */,
+				7553C96627BF74DF00140690 /* Then in Frameworks */,
+				7553C96C27BF750200140690 /* ModernRIBs in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +66,6 @@
 			children = (
 				751A43A127BF6C5E003C5E10 /* AppDelegate.swift */,
 				751A43A527BF6C5E003C5E10 /* ViewController.swift */,
-				751A43A727BF6C5E003C5E10 /* Main.storyboard */,
 				751A43AA27BF6C60003C5E10 /* Assets.xcassets */,
 				751A43AC27BF6C60003C5E10 /* LaunchScreen.storyboard */,
 				751A43AF27BF6C60003C5E10 /* Info.plist */,
@@ -80,6 +89,14 @@
 			dependencies = (
 			);
 			name = Finda;
+			packageProductDependencies = (
+				7553C96227BF74CC00140690 /* NSObject-Rx */,
+				7553C96527BF74DF00140690 /* Then */,
+				7553C96827BF74F200140690 /* SnapKit */,
+				7553C96B27BF750200140690 /* ModernRIBs */,
+				7553C96E27BF751900140690 /* RxCocoa */,
+				7553C97027BF751900140690 /* RxSwift */,
+			);
 			productName = Finda;
 			productReference = 751A439E27BF6C5E003C5E10 /* Finda.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +125,13 @@
 				Base,
 			);
 			mainGroup = 751A439527BF6C5E003C5E10;
+			packageReferences = (
+				7553C96127BF74CC00140690 /* XCRemoteSwiftPackageReference "NSObject-Rx" */,
+				7553C96427BF74DF00140690 /* XCRemoteSwiftPackageReference "Then" */,
+				7553C96727BF74F200140690 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				7553C96A27BF750200140690 /* XCRemoteSwiftPackageReference "ModernRIBs" */,
+				7553C96D27BF751900140690 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 751A439F27BF6C5E003C5E10 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -124,7 +148,6 @@
 			files = (
 				751A43AE27BF6C60003C5E10 /* LaunchScreen.storyboard in Resources */,
 				751A43AB27BF6C60003C5E10 /* Assets.xcassets in Resources */,
-				751A43A927BF6C5E003C5E10 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,14 +166,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		751A43A727BF6C5E003C5E10 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				751A43A827BF6C5E003C5E10 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		751A43AC27BF6C60003C5E10 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,7 +305,6 @@
 				INFOPLIST_FILE = Finda/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +332,6 @@
 				INFOPLIST_FILE = Finda/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +369,82 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7553C96127BF74CC00140690 /* XCRemoteSwiftPackageReference "NSObject-Rx" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/NSObject-Rx.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		7553C96427BF74DF00140690 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		7553C96727BF74F200140690 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		7553C96A27BF750200140690 /* XCRemoteSwiftPackageReference "ModernRIBs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DevYeom/ModernRIBs.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		7553C96D27BF751900140690 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7553C96227BF74CC00140690 /* NSObject-Rx */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7553C96127BF74CC00140690 /* XCRemoteSwiftPackageReference "NSObject-Rx" */;
+			productName = "NSObject-Rx";
+		};
+		7553C96527BF74DF00140690 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7553C96427BF74DF00140690 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		7553C96827BF74F200140690 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7553C96727BF74F200140690 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		7553C96B27BF750200140690 /* ModernRIBs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7553C96A27BF750200140690 /* XCRemoteSwiftPackageReference "ModernRIBs" */;
+			productName = ModernRIBs;
+		};
+		7553C96E27BF751900140690 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7553C96D27BF751900140690 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		7553C97027BF751900140690 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7553C96D27BF751900140690 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 751A439627BF6C5E003C5E10 /* Project object */;
 }
