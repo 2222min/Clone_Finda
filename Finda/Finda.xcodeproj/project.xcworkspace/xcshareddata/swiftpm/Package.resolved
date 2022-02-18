@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ModernRIBs",
+        "repositoryURL": "https://github.com/DevYeom/ModernRIBs.git",
+        "state": {
+          "branch": "main",
+          "revision": "1bc5ce6cf05b17f3e5152c863c8cfed1fd3ce3a3",
+          "version": null
+        }
+      },
+      {
+        "package": "NSObject-Rx",
+        "repositoryURL": "https://github.com/RxSwiftCommunity/NSObject-Rx.git",
+        "state": {
+          "branch": null,
+          "revision": "6134a640808db7390d3dfcb32ef5f0a12b7a644d",
+          "version": "5.2.2"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "state": {
+          "branch": "main",
+          "revision": "7741a11cb4252c379c8e034508cb1b92b8b40427",
+          "version": null
+        }
+      },
+      {
+        "package": "SnapKit",
+        "repositoryURL": "https://github.com/SnapKit/SnapKit.git",
+        "state": {
+          "branch": "develop",
+          "revision": "466db39ee4ef32b0f7c8cd9f009aaf42f80beace",
+          "version": null
+        }
+      },
+      {
+        "package": "Then",
+        "repositoryURL": "https://github.com/devxoul/Then.git",
+        "state": {
+          "branch": "master",
+          "revision": "e421a7b3440a271834337694e6050133a3958bc7",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
