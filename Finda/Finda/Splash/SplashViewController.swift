@@ -25,6 +25,13 @@ final class SplashViewController: UIViewController, SplashPresentable, SplashVie
         $0.textColor = .black
         $0.textAlignment = .center
     }
+    
+    let pageControl = UIPageControl().then{
+        $0.numberOfPages = 3
+        $0.currentPage = 0
+    }
+    
+    
     init(){
         super.init(nibName: nil, bundle: nil)
         setupViews()
