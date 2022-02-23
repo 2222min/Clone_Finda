@@ -13,13 +13,13 @@ final class NavigationControllerable: ViewControllable {
             let navigationBar = UINavigationBar()
             appearance.configureWithOpaqueBackground()
             appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-            appearance.backgroundColor = .customblueColor
+//            appearance.backgroundColor = .customblueColor
             navigationBar.standardAppearance = appearance
             UINavigationBar.appearance().scrollEdgeAppearance = appearance
             UINavigationBar.appearance().standardAppearance = appearance
         } else {
-            navigation.navigationBar.barTintColor = .customblueColor
-            navigation.view.backgroundColor = .customblueColor
+//            navigation.navigationBar.barTintColor = .customblueColor
+//            navigation.view.backgroundColor = .customblueColor
             navigation.navigationBar.isTranslucent = false
             navigation.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
             navigation.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)

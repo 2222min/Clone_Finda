@@ -32,7 +32,7 @@ final class SplashBuilder: Builder<SplashDependency>, SplashBuildable {
     func build(withListener listener: SplashListener) -> SplashRouting {
         let component = SplashComponent(dependency: dependency)
         let viewController = SplashViewController()
-        let interactor = SplashInteractor(presenter: viewController)
+        let interactor = SplashInteractor(presenter: viewController,splashModel: .init())
         interactor.listener = listener
         return SplashRouter(interactor: interactor, viewController: viewController)
     }

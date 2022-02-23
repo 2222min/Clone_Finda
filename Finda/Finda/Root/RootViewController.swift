@@ -46,7 +46,10 @@ final class RootViewController: UIViewController, RootPresentable, RootViewContr
         self.mainView.addSubview(subView!)
         
         subView?.snp.makeConstraints{ make in
-            make.edges.equalToSuperview()
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            make.leading.equalTo(view.safeAreaLayoutGuide.snp.leading)
+            make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
         }
         
         viewController.didMove(toParent: self)
