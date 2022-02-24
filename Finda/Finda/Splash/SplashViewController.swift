@@ -14,7 +14,7 @@ import SnapKit
 import NSObject_Rx
 
 protocol SplashPresentableListener: AnyObject {
-  
+    func authBtnTapped() // 인증버튼 클릭 이벤트 처리
 }
 
 final class SplashViewController: UIViewController, SplashPresentable, SplashViewControllable, UIScrollViewDelegate {
@@ -44,6 +44,8 @@ final class SplashViewController: UIViewController, SplashPresentable, SplashVie
         $0.currentPage = 0
         $0.pageIndicatorTintColor = .lightGray
         $0.currentPageIndicatorTintColor = .mainColor
+        $0.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        $0.setNeedsDisplay()
     }
     
     // 본인인증 버튼
@@ -66,7 +68,19 @@ final class SplashViewController: UIViewController, SplashPresentable, SplashVie
         setupViews()
         bind()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     func configure() {
+        
         // 카드뷰 컬렉션 뷰 Configuration
         collectionView.register(SplashCVC.self, forCellWithReuseIdentifier: "SplashCVC")
         collectionView.rx.setDelegate(self)
@@ -74,13 +88,14 @@ final class SplashViewController: UIViewController, SplashPresentable, SplashVie
     }
     
     func setupViews() {
-        
+       
         view.addSubview(pageControl)
         view.addSubview(authBtn)
         view.addSubview(collectionView)
         
         pageControl.snp.makeConstraints { make in
-            make.top.left.equalToSuperview()
+            make.top.equalToSuperview()
+            make.left.equalToSuperview().offset(15)
             make.height.equalTo(50)
         }
         authBtn.snp.makeConstraints{ make in
@@ -114,10 +129,16 @@ final class SplashViewController: UIViewController, SplashPresentable, SplashVie
                 let page = Int($0.targetContentOffset.pointee.x / (self.collectionView.frame.width - layout.minimumLineSpacing))
                 self.pageControl.currentPage = page
             }).disposed(by: rx.disposeBag)
+        
+        // 본인인증하고 시작하기 버튼 클릭 이벤트 처리
+        authBtn.rx.tap
+            .subscribe(onNext: { [weak self] in
+                guard let self = self else { return }
+                self.listener?.authBtnTapped()
+            }).disposed(by: rx.disposeBag)
     }
     
     func setCollectionView(_ splashModel: [SplashModel]) {
         self.splashModel.accept(splashModel)
     }
-    
 }

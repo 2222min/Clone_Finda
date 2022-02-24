@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		750D68D127C71F7C00221F7D /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750D68CD27C71F7C00221F7D /* AuthRouter.swift */; };
+		750D68D227C71F7C00221F7D /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750D68CE27C71F7C00221F7D /* AuthViewController.swift */; };
+		750D68D327C71F7C00221F7D /* AuthBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750D68CF27C71F7C00221F7D /* AuthBuilder.swift */; };
+		750D68D427C71F7C00221F7D /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750D68D027C71F7C00221F7D /* AuthInteractor.swift */; };
 		751A43A227BF6C5E003C5E10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A43A127BF6C5E003C5E10 /* AppDelegate.swift */; };
 		751A43AB27BF6C60003C5E10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751A43AA27BF6C60003C5E10 /* Assets.xcassets */; };
 		751A43AE27BF6C60003C5E10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 751A43AC27BF6C60003C5E10 /* LaunchScreen.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		750D68CD27C71F7C00221F7D /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		750D68CE27C71F7C00221F7D /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		750D68CF27C71F7C00221F7D /* AuthBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBuilder.swift; sourceTree = "<group>"; };
+		750D68D027C71F7C00221F7D /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
 		751A439E27BF6C5E003C5E10 /* Finda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		751A43A127BF6C5E003C5E10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		751A43AA27BF6C60003C5E10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +81,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		750D68CC27C71F5800221F7D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				750D68CD27C71F7C00221F7D /* AuthRouter.swift */,
+				750D68CE27C71F7C00221F7D /* AuthViewController.swift */,
+				750D68CF27C71F7C00221F7D /* AuthBuilder.swift */,
+				750D68D027C71F7C00221F7D /* AuthInteractor.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		751A439527BF6C5E003C5E10 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +117,7 @@
 				75B2823327C369B20039DEA9 /* AppDelegate */,
 				75B2822C27C3696E0039DEA9 /* Root */,
 				754D9B9127C4AB9D004FA2B6 /* Splash */,
+				750D68CC27C71F5800221F7D /* Auth */,
 				751A43AA27BF6C60003C5E10 /* Assets.xcassets */,
 				751A43AC27BF6C60003C5E10 /* LaunchScreen.storyboard */,
 				751A43AF27BF6C60003C5E10 /* Info.plist */,
@@ -251,9 +271,11 @@
 				754D9B8E27C49215004FA2B6 /* RootViewController.swift in Sources */,
 				75F2C60127C60F4500922EEA /* SplashCVC.swift in Sources */,
 				75F2C5F827C5FD1600922EEA /* CommonDef.swift in Sources */,
+				750D68D327C71F7C00221F7D /* AuthBuilder.swift in Sources */,
 				754D9B9727C4AC64004FA2B6 /* SplashRouter.swift in Sources */,
 				754D9B8D27C49215004FA2B6 /* RootRouter.swift in Sources */,
 				75F2C5FC27C60AF800922EEA /* SplashModel.swift in Sources */,
+				750D68D127C71F7C00221F7D /* AuthRouter.swift in Sources */,
 				754D9B9827C4AC64004FA2B6 /* SplashViewController.swift in Sources */,
 				754D9B9027C49215004FA2B6 /* RootInteractor.swift in Sources */,
 				754D9B9A27C4AC64004FA2B6 /* SplashInteractor.swift in Sources */,
@@ -262,7 +284,9 @@
 				75F2C5FE27C60CD100922EEA /* UIImage+Finda.swift in Sources */,
 				75B2823527C369C70039DEA9 /* AppComponent.swift in Sources */,
 				754D9B9C27C4B3D4004FA2B6 /* UIColor+Finda.swift in Sources */,
+				750D68D427C71F7C00221F7D /* AuthInteractor.swift in Sources */,
 				754D9B9927C4AC64004FA2B6 /* SplashBuilder.swift in Sources */,
+				750D68D227C71F7C00221F7D /* AuthViewController.swift in Sources */,
 				754D9B8F27C49215004FA2B6 /* RootBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

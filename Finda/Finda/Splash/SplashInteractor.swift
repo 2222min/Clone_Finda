@@ -10,6 +10,8 @@ import UIKit
 
 protocol SplashRouting: ViewableRouting {
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
+    func moveToAuthPage()
+    func detachAuth()
 }
 
 protocol SplashPresentable: Presentable {
@@ -20,9 +22,10 @@ protocol SplashPresentable: Presentable {
 
 protocol SplashListener: AnyObject {
     // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
+   
 }
 
-final class SplashInteractor: PresentableInteractor<SplashPresentable>, SplashInteractable, SplashPresentableListener {
+final class SplashInteractor: PresentableInteractor<SplashPresentable>, SplashInteractable {
 
     weak var router: SplashRouting?
     weak var listener: SplashListener?
@@ -47,5 +50,16 @@ final class SplashInteractor: PresentableInteractor<SplashPresentable>, SplashIn
     override func willResignActive() {
         super.willResignActive()
         // TODO: Pause any business logic.
+    }
+}
+
+extension SplashInteractor: SplashPresentableListener {
+    // 인증버튼 클릭 이벤트 처리
+    func authBtnTapped() {
+        self.router?.moveToAuthPage()
+    }
+    // detach Auth
+    func detachEvent() {
+        self.router?.detachAuth()
     }
 }

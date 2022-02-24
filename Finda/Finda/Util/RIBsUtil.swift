@@ -13,21 +13,23 @@ final class NavigationControllerable: ViewControllable {
             let navigationBar = UINavigationBar()
             appearance.configureWithOpaqueBackground()
             appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-//            appearance.backgroundColor = .customblueColor
+            appearance.backgroundColor = .clear
             navigationBar.standardAppearance = appearance
             UINavigationBar.appearance().scrollEdgeAppearance = appearance
             UINavigationBar.appearance().standardAppearance = appearance
         } else {
-//            navigation.navigationBar.barTintColor = .customblueColor
-//            navigation.view.backgroundColor = .customblueColor
+            navigation.navigationBar.barTintColor = .clear
+            navigation.view.backgroundColor = .clear
             navigation.navigationBar.isTranslucent = false
             navigation.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
             navigation.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
             navigation.navigationBar.shadowImage = UIImage()
         }
+        let backItem = UIBarButtonItem(title: nil, style: .plain, target: nil, action: nil)
+        navigation.navigationItem.backBarButtonItem = backItem
         // 네비게이션 바 색상 UIColor와 일치시키기
         UINavigationBar.appearance().isTranslucent = false
-        navigation.navigationBar.tintColor = .white
+        navigation.navigationBar.tintColor = .black
         self.navigationController = navigation
     }
 }

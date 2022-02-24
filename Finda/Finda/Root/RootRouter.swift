@@ -7,7 +7,7 @@
 
 import ModernRIBs
 
-protocol RootInteractable: Interactable, SplashListener {
+protocol RootInteractable: Interactable, SplashListener{
     var router: RootRouting? { get set }
     var listener: RootListener? { get set }
 }
@@ -41,11 +41,13 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>{
         self.appRouting = splashRouter
         
         attachChild(splashRouter)
-        viewController.addChildVC(splashRouter.viewControllable)
+        
+        let navi = NavigationControllerable.init(root: splashRouter.viewControllable)
+        viewController.addChildVC(navi)
         
     }
 }
 
 extension RootRouter: RootRouting {
-    
+   
 }
