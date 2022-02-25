@@ -18,10 +18,6 @@ final class RootViewController: UIViewController, RootPresentable, RootViewContr
 
     weak var listener: RootPresentableListener?
     
-    let mainView = UIView().then{
-        $0.backgroundColor = .clear
-    }
-    
     init(){
         super.init(nibName: nil, bundle: nil)
         setupViews()
@@ -33,19 +29,15 @@ final class RootViewController: UIViewController, RootPresentable, RootViewContr
     }
     
     func setupViews(){
-        self.view.addSubview(mainView)
-        mainView.snp.makeConstraints{
-            $0.edges.equalToSuperview()
-        }
     }
     
     func addChildVC(_ viewcontroller: ViewControllable) {
-        let viewController = viewcontroller.uiviewController
-        let subView = viewController.view
-        addChild(viewController)
-        self.mainView.addSubview(subView!)
         
-        subView?.snp.makeConstraints{ make in
+        let viewController = viewcontroller.uiviewController
+        addChild(viewController)
+        self.view.addSubview(viewController.view)
+        
+        viewController.view.snp.makeConstraints{ make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
             make.leading.equalTo(view.safeAreaLayoutGuide.snp.leading)
             make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing)

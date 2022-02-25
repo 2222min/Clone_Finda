@@ -28,7 +28,7 @@ final class SplashViewController: UIViewController, SplashPresentable, SplashVie
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.sectionInset = .init()
-        layout.itemSize = .init(width: SCREENWIDTH, height: SCREENHEIGHT)
+        layout.itemSize = .init(width: SCREENWIDTH, height: guideLineHeigth - 100)
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
         $0.collectionViewLayout = layout

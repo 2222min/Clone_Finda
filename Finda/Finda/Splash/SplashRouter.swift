@@ -46,7 +46,7 @@ extension SplashRouter: SplashRouting {
         self.appRouting = authRouter
         
         attachChild(authRouter)
-        self.viewController.pushViewController(authRouter.viewControllable, animated: true)
+        viewController.pushViewController(authRouter.viewControllable, animated: true)
     }
     
     // Detach Auth
