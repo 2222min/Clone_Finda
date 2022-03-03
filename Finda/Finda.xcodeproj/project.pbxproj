@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		750C4F6827D0928900FD26B8 /* InputNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750C4F6727D0928900FD26B8 /* InputNameView.swift */; };
+		750C4F6A27D09FA300FD26B8 /* UITextField+Finda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750C4F6927D09FA300FD26B8 /* UITextField+Finda.swift */; };
 		750D68D127C71F7C00221F7D /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750D68CD27C71F7C00221F7D /* AuthRouter.swift */; };
 		750D68D227C71F7C00221F7D /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750D68CE27C71F7C00221F7D /* AuthViewController.swift */; };
 		750D68D327C71F7C00221F7D /* AuthBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750D68CF27C71F7C00221F7D /* AuthBuilder.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		750C4F6727D0928900FD26B8 /* InputNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameView.swift; sourceTree = "<group>"; };
+		750C4F6927D09FA300FD26B8 /* UITextField+Finda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Finda.swift"; sourceTree = "<group>"; };
 		750D68CD27C71F7C00221F7D /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
 		750D68CE27C71F7C00221F7D /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		750D68CF27C71F7C00221F7D /* AuthBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBuilder.swift; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 				754D9B9B27C4B3D3004FA2B6 /* UIColor+Finda.swift */,
 				75B2823627C36B040039DEA9 /* RIBsUtil.swift */,
 				75F2C5F727C5FD1600922EEA /* CommonDef.swift */,
+				750C4F6927D09FA300FD26B8 /* UITextField+Finda.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				75F2C60027C60F4500922EEA /* SplashCVC.swift */,
+				750C4F6727D0928900FD26B8 /* InputNameView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -271,6 +277,7 @@
 				754D9B8E27C49215004FA2B6 /* RootViewController.swift in Sources */,
 				75F2C60127C60F4500922EEA /* SplashCVC.swift in Sources */,
 				75F2C5F827C5FD1600922EEA /* CommonDef.swift in Sources */,
+				750C4F6827D0928900FD26B8 /* InputNameView.swift in Sources */,
 				750D68D327C71F7C00221F7D /* AuthBuilder.swift in Sources */,
 				754D9B9727C4AC64004FA2B6 /* SplashRouter.swift in Sources */,
 				754D9B8D27C49215004FA2B6 /* RootRouter.swift in Sources */,
@@ -279,6 +286,7 @@
 				754D9B9827C4AC64004FA2B6 /* SplashViewController.swift in Sources */,
 				754D9B9027C49215004FA2B6 /* RootInteractor.swift in Sources */,
 				754D9B9A27C4AC64004FA2B6 /* SplashInteractor.swift in Sources */,
+				750C4F6A27D09FA300FD26B8 /* UITextField+Finda.swift in Sources */,
 				75B2823727C36B040039DEA9 /* RIBsUtil.swift in Sources */,
 				751A43A227BF6C5E003C5E10 /* AppDelegate.swift in Sources */,
 				75F2C5FE27C60CD100922EEA /* UIImage+Finda.swift in Sources */,
