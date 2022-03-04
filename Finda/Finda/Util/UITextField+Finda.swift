@@ -8,15 +8,17 @@
 import UIKit
 
 extension UITextField {
+    
     func underlined(color:UIColor){
-        let border = CALayer()
+        let bottomLine = CALayer()
         let width = CGFloat(1.0)
-        border.borderColor = color.cgColor
-        border.frame = CGRect(x: 0, y: self.frame.size.height - width, width:  self.frame.size.width, height: self.frame.size.height)
-        border.borderWidth = width
-        self.layer.addSublayer(border)
+        bottomLine.frame = CGRect(x: 0, y: self.frame.size.height - width, width:  SCREENWIDTH-24, height: width)
+        bottomLine.backgroundColor = color.cgColor
+        borderStyle = .none
+        layer.addSublayer(bottomLine)
         self.layer.masksToBounds = true
     }
+    
     
 
 }

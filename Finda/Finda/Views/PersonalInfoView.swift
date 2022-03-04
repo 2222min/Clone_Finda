@@ -1,17 +1,16 @@
 //
-//  InputNameView.swift
+//  PersonalInfoView.swift
 //  Finda
 //
-//  Created by mobile on 2022/03/03.
+//  Created by mobile on 2022/03/04.
 //
 
 import UIKit
 
-class InputNameView: UIView {
-    
-    
+class PersonalInfoView: UIView {
+
     private let titleLable = UILabel().then{
-        $0.text = "이름"
+        $0.text = "주민등록번호"
         $0.textColor = .black
         $0.font = .systemFont(ofSize: 12, weight: .regular)
     }
@@ -67,5 +66,5 @@ class InputNameView: UIView {
                 self.underline.backgroundColor = .mainColor
             }).disposed(by: rx.disposeBag)
     }
-    
+
 }
