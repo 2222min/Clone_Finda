@@ -34,9 +34,7 @@ final class AuthViewController: UIViewController, AuthPresentable, AuthViewContr
     }
     
     private let nameView = InputNameView()
-    private let personalInfoView = UIView().then{
-        $0.backgroundColor = .cyan
-    }
+    private let personalInfoView = PersonalInfoView()
     
     private let nextBtn = UIButton().then {
         $0.backgroundColor = . systemBlue
@@ -106,6 +104,8 @@ final class AuthViewController: UIViewController, AuthPresentable, AuthViewContr
             switch type {
             case .rrn:
                 self.addInStackView(self.personalInfoView)
+                self.personalInfoView.rrnTF_front.becomeFirstResponder()
+                self.nameView.initView()
                 self.nextBtn.isHidden = true
 //            case .agency:
 //

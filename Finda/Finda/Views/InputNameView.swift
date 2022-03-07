@@ -68,4 +68,8 @@ class InputNameView: UIView {
             }).disposed(by: rx.disposeBag)
     }
     
+    func initView() {
+        self.titleLable.textColor = .black
+        self.underline.backgroundColor = .lightGray
+    }
 }
